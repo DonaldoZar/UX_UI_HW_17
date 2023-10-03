@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252a;
+    background-color: #373738;
 }
 
 li, a, button {
@@ -17,13 +17,22 @@ li, a, button {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
 }
 
+nav {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+}
+
 .logo {
+    width: 160px;
+    height: 100px;
     cursor: pointer;
+    margin-right: auto;
 }
 
 .nav_links {
@@ -44,6 +53,7 @@ header {
 }
 
 button {
+    margin-left: 20px;
     padding: 9px 25px;
     background-color: rgba(0,136,169,1);
     border: none;
@@ -53,5 +63,5 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0,136,169,);
+    background-color: rgba(0,136,169,0.6);
 }
